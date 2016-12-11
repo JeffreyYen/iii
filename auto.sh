@@ -1,6 +1,6 @@
 #! /bin/bash
 
-cd /c/Users/302-TCFST/test-iii/pic
+#cd /C/Users/302-TCFST/test-iii/pic
 
 ls
 while true
@@ -10,7 +10,7 @@ do
   if [ $fc -gt 0 ];
     then
 	  echo 'test1'
-      FILES=/c/Users/302-TCFST/test-iii/pic/*
+      FILES=./pic/*
 	  echo 'test2'
       for f in $FILES
       do
@@ -21,6 +21,6 @@ do
         /mingw64/bin/git remote remove origin
       done
   fi;
-  rm -rf /c/Users/302-TCFST/test-iii/pic/*
+  rm -rf /C/Users/302-TCFST/test-iii/pic/*
   sleep 3
 done
